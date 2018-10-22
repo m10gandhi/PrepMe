@@ -1,0 +1,99 @@
+button {
+  height: 40px;
+  border: 1px solid #aaaaaa;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 3px;
+  color: black;
+  /*	margin-bottom: 1em;*/
+}
+
+.error-message{
+  margin-left: 2.5em;
+}
+
+.login-buttons{
+  /* width: 50%; */
+  float: right;
+}
+
+.left-pane {
+  float: left;
+  width: 20%;
+}
+
+.right-pane {
+  float: left;
+  width: 20%;
+}
+
+.middle-pane {
+  float: left;
+  width: 60%;
+}
+
+.middle-pane1 {
+  float: left;
+  margin-left: 20%;
+  width: 60%;
+}
+
+
+.bottom-pane {
+  float: left;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.main-container {
+  /* margin-left: .5em;
+  margin-right: .5em; */
+  padding-top: 2em;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 2em;
+  border-radius: 3px;
+  /* color: #dddddd; */
+  padding-bottom: 2em;
+}
+
+.small-container{
+  float: left;
+  /* padding-left: .5em;
+  padding-right: .5em; */
+  width: 50%;
+  margin-top: .5em;
+  /* padding-top: 2em; */
+  /* border: 1px solid #aaaaaa;
+  border-radius: 3px; */
+  /* color: #dddddd;
+  padding-bottom: 2em; */
+}
+
+.input-boxes {
+  padding-left: 10px;
+  height: 40px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.text-center {
+  text-align: center;
+  color: black;
+}
+
+.border-div {
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+}
+
+.text-container {
+  color: black;
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  padding-left: .5em;
+  padding-right: .5em;
+  text-align: justify;
+}

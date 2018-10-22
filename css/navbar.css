@@ -1,0 +1,79 @@
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_bar_h */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  margin:0;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar .text {
+  color: white;
+  font-size: 35px;
+  float:left;
+  margin-left: 2%;
+  padding: 2px;
+}
+
+.icon-bar .button {
+    float: right;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #76b852; !important;
+    float: left;
+}
+
+.hidden_button {
+  display: none;
+  float: right;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media only screen and (max-width: 1000px) {
+    /* make the login button show */
+    .hidden_button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .icon-bar .button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+}

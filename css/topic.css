@@ -1,0 +1,89 @@
+/* https://www.w3schools.com/ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 94%;
+  padding: 1% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  background: #FFFFFF;
+  padding: 40px;
+}
+.form label {
+  float:left;
+  clear: both;
+}
+.form input {
+  float:right;
+  width: 90%;
+  margin: 0 0 15px;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.form button {
+  background: #4CAF50;
+  width: 20%;
+  border: 0;
+  margin-left: 80%;
+  padding: 8px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.form button:hover {
+  background: #000;
+}
+
+/* center line */
+.line {
+  display: block;
+  border-top: 2px solid #555;
+  width: 100%;
+}
+
+.box {
+  width: 90%;
+  border: 2px solid #555;
+  padding: 25px;
+  margin: 25px;
+}
+
+.link {
+  margin-left: 90%;
+}
+
+body {
+	/*background-color: #FFEE58;*/
+	font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media only screen and (max-width: 1000px) {
+  body{
+    font-size: 13px;
+  	/*background-color: #FFEE58;*/
+  	font-family: "Roboto", sans-serif;
+  }
+
+  .form button {
+    background: #4CAF50;
+    width: 40%;
+    border: 0;
+    margin-left: 50%;
+    padding: 8px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  .link {
+    margin-left: 75%;
+  }
+
+}

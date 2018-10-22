@@ -1,0 +1,129 @@
+/*https://www.w3schools.com/css/css_navbar.asp  */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  width: auto;
+  margin:0;
+  background-color: #FFEE58;
+}
+/* main container */
+.container {
+  font-family: "Roboto", sans-serif;
+  width: 95%;
+  margin:auto;
+  overflow: auto;
+}
+/* left side - groups */
+.left {
+  font-family: "Roboto", sans-serif;
+  width:45%;
+  height: 700px;
+  float:left;
+}
+/* center line */
+.line {
+  display: block;
+  border-left: 2px solid black;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+}
+/* right side - login */
+.right {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  width:45%;
+  height: 700px;
+  float:right;
+}
+/* login */
+.login-page {
+  width: 70%;
+  margin: auto;
+}
+.form {
+  position: relative;
+  background: #FFFFFF;
+  padding: 40px;
+}
+.form label {
+  float:left;
+  clear: both;
+}
+.form input {
+  float:right;
+  width: 70%;
+  margin: 0 0 15px;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 8px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.form button:hover {
+  background: #000;
+}
+/* groups */
+.group_button{
+  background-color: #4CAF50;
+  font-family: "Roboto", sans-serif;
+  width: 20%;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 30px;
+}
+
+.login-page1 {
+  width: 95%;
+  margin: auto;
+}
+.form1 {
+  position: relative;
+  background: #FFFFFF;
+  padding: 40px;
+}
+.button1 {
+  font-family: "Roboto", sans-serif;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 6px 15px 6px 15px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 20px;
+  margin: 0 5px 15px;
+}
+
+.form1 button:hover {
+  background: #000;
+}
+
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media only screen and (max-width: 1000px) {
+    /* remove center line */
+    .line {
+      display: none;
+    }
+    /* remove right side - login */
+    .right {
+      display: none;
+    }
+    /* keep left side in center */
+    .left {
+      width:auto;
+    }
+}

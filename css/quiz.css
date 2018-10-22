@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+
+/* 
+* Bootstrap customization
+*/
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.btn-outline-dark {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-radius: 10px;
+}
+
+/* 
+* Bootstrap customization end
+*/
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.vl {
+    /*https://www.w3schools.com/howto/howto_css_vertical_line.asp*/
+    border-left: 2px solid grey;
+    margin-top: 7.5%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.hl {
+    /*https://www.w3schools.com/howto/howto_css_vertical_line.asp*/
+    border-top: 2px solid grey;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 1em;
+        margin-bottom: 1em;
+    left: 0;
+}
+
+.question-navigators{
+    /*https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div*/
+    /*height: 50%;*/
+    max-width: 50%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

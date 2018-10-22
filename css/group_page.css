@@ -1,0 +1,42 @@
+.post{
+  margin: 0 auto;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  /* padding: .5em .5em; */
+}
+
+.leftMenu{
+  position: fixed;
+  float: left;
+  height: 100%;
+}
+
+.posts_pane{
+  text-align: center;
+}
+
+.post_header{
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.add_post_pane{
+  padding: 1em 1em;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.error-message{
+  padding-left: .5em;
+  color: lightsalmon;
+}
+
+.pdfViewer{
+  margin: 0 auto;
+  /* border: 1px solid grey; */
+  /* border-radius: 3px; */
+  /* margin-bottom: 10px; */
+}

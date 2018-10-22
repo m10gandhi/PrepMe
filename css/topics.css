@@ -1,0 +1,17 @@
+.row .flex {
+    display: inline-flex;
+    width: 100%;}
+/*img {
+    width:100%;
+    min-height:100px;}
+    */
+p{
+    text-align: center;
+    /*font-family: "Arial Black";*/
+    font-size: medium;
+    color: darkslategrey;
+}
+h1{
+    text-align: center;
+}
+

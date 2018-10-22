@@ -1,0 +1,375 @@
+:root {
+
+  --left-button-hover-color: rgba(92, 92, 92, 0.3);
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --hover-width: 80%;
+  --other-width: 20%;
+  --speed: 1000ms;
+}
+
+
+html, body {
+  padding:0;
+  margin:0;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4em;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+   word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto
+     visibility:visible;
+}
+
+h1.hid2{
+  visibility: hidden;
+}
+h1.hid{
+  visibility: hidden;
+}
+
+h1.group {
+  font-size: 4em;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+h3.group {
+  font-size: 2em;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+h4.group {
+  font-size: 1em;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.button {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 45%;
+  height: 4em;
+  padding-top: 1em;
+  width: 15em;
+  text-align: center;
+  color: #000;
+  border: #000 solid 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.button1 {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  height: 4em;
+  padding-top: 1em;
+  width: 15em;
+  text-align: center;
+  color: #000;
+  border: #000 solid 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+transform: translateX(-50%);
+}
+
+.split.left .button1:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left:0;
+  width: 60%;
+  background-image: url("../images/log1.jpg");
+  background-size: cover;
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.right {
+  right:0;
+  width: 40%;
+  background-image: url("../images/log2.jpg");
+  background-size: cover;
+    visibility: visible;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+    visibility: visible;
+}
+
+.split.left, .split.right, .split.right:before, .split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
+
+
+@media(max-width: 599px) and (min-width: 320px){
+
+	:root {
+  --hover-width: 90%;
+  --other-width: 10%;
+  }
+
+h1{
+  visibility: hidden;
+  font-size: 2em;
+}
+
+h1.hid{
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  visibility: visible;
+}
+h1.hid2{
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  visibility: visible;
+}
+
+ .button {
+    width: 8em;
+  }
+   .button1 {
+    width: 8em;
+  }
+
+ h1.group{
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+    font-size: 2em;
+  }
+h3.group{
+font-size: 1.2em;
+}
+
+h4.group{
+	font-size: 0.8em;
+}
+
+.split.right {
+  right:0;
+  width: 0%;
+  background-image: url("../images/log2.jpg");
+  background-size: cover;
+    visibility: hidden;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+    visibility: hidden;
+}
+
+
+.split {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left:0;
+  width: 100%;
+  background-image: url("../images/log1.jpg");
+  background-size: cover;
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.hover-right .right{
+  visibility: hidden;
+}
+
+.hover-right .left{
+  visibility: hidden;
+}
+
+.hover-right .left:before{
+  visibility: hidden;
+}
+
+.hover-left .right{
+  visibility: hidden;
+}
+
+.hover-left .right:before{
+  visibility: hidden;
+}
+}
+@media(max-width: 900px) and (min-width: 600px) {
+
+	:root {
+  --hover-width: 90%;
+  --other-width: 10%;
+  }
+
+  h1{
+    font-size: 3em;
+    visibility: visible;
+  }
+
+  h1.hid{
+  visibility: hidden;
+}
+h1.hid2{
+  visibility: hidden;
+}
+
+  .button {
+    width: 10em;
+  }
+   .button1 {
+    width: 10em;
+  }
+
+ h1.group{
+    font-size: 3em;
+  }
+h3.group{
+font-size: 2em;
+}
+
+h4.group{
+	font-size: 1em;
+}
+}
+
+.split.right:before {
+visibility: visible;
+}
+
+.split.right{
+  visibility: visible;
+}
+
+@media (max-height: 360px) and (min-height: 230px) and (orientation:landscape){
+
+  .button {
+    width: 10em;
+    height: 2em;
+  padding-top: 0.3em;
+  }
+   .button1 {
+    height: 2em;
+    width: 10em;
+    margin-bottom: 50px;
+    padding-top: 0.3em;
+  }
+
+  h1.group{
+    font-size: 2em;
+    margin-bottom: 4px;
+  }
+h3.group{
+font-size: 1.2em;
+margin-bottom: 4px;
+}
+
+h4.group{
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+}
